@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    font-family: "monserrat", sans-serif;
+    opacity: 0.08;
+    animation: flashing 0.2s infinite;
+}
+@keyframes flashing {
+ 0% {
+     background-color: #000000;
+ }
+ 24% {
+     background-color: #000000;
+ }
+ 25% {
+     background-color: rgb(90, 88, 88);
+ }
+ 29%{
+    background-color: rgb(90, 88, 88);
+ }
+ 30% {
+     background-color: #000000;
+ }
+}
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: 14px;
+    font-weight: bold;
+    transition: all 400ms;
+    pointer-events: none;
+    cursor: none;
+    animation: thing 0.01s infinite;
+}
+
+@keyframes thing{
+   0% {
+       font-size: 70px;
+       letter-spacing: 30px;
+   }
+
+   25% {
+       font-size: 60px;
+       letter-spacing: 80px;
+       color: rgb(124, 124, 41);
+   }
+   50% {
+       font-size: 124px;
+       left: 54%;
+       letter-spacing: 45px;
+   }
+   75%{
+       font-size: 50px;
+       top: 53%;
+       letter-spacing: 70px;
+   }
+   100% {
+       color: red;
+       font-size: 100px;
+   }
+}
+
+.text::before,.text::after {
+    pointer-events: none;
+    cursor: none;
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    font-size: 70px;
+}
+
+.text::before {
+    pointer-events: none;
+    cursor: none;
+    color: #ff00c1;
+    animation: glitch-effect 0.6s infinite;
+}
+.text::after {
+    pointer-events: none;
+    cursor: none;
+    color: #3498db;
+    animation: glitch-effect 0.4s infinite;
+}
+
+@keyframes glitch-effect {
+    0% {
+        color: aquamarine;
+        pointer-events: none;
+        cursor: none;
+        left: -4px;
+        top: -4px;
+    }
+    25% {
+        color: red;
+        pointer-events: none;
+        cursor: none;
+        left: 6px;
+        top: -4px;
+    }
+    50% {
+        pointer-events: none;
+        cursor: none;
+        left: -1px;
+        top: 4px;
+    }
+    75% {
+        pointer-events: none;
+        cursor: none;
+        left: -8px;
+        top: -1px;
+    }
+    100% {
+        pointer-events: none;
+        cursor: none;
+        left: 0px;
+        top: -7px;
+    }
+}
