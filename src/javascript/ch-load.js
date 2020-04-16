@@ -9,6 +9,7 @@ const c8 = document.getElementById('c8')
 const c9 = document.getElementById('c9')
 const c10 = document.getElementById('c10')
 const c11 = document.getElementById('c11')
+const c12 = document.getElementById('c12')
 
 c1.addEventListener('click', e => {
     e.preventDefault()
