@@ -54,3 +54,7 @@ c11.addEventListener('click', e => {
     e.preventDefault()
     window.location = "./characters/shadow"
 })
+c12.addEventListener('click', e => {
+    e.preventDefault()
+    window.location = "./characters/kyaru"
+})
