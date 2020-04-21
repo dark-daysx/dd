@@ -1,4 +1,4 @@
-var dateX = 'Dec 1, 2021 20:10:10'
+var dateX = 'Dec 1, 2020 20:10:10'
 var element = 'countDown'
 
 function countDown() {

@@ -173,3 +173,31 @@ html {
   font-size: 18px;
   padding: 10px 15px;
 }
+
+.credit {
+  width: 1100px;
+  height: 550px;
+  background-color: grey;
+  position: relative;
+  left: 125px;
+  border-radius: 10px;
+  padding: 10px 15px;
+  z-index: -1;
+}
+
+.credec {
+  display: flex;
+}
+
+.vids {
+  display: flex;
+  width: 85%;
+  position: relative;
+  height: fit-content;
+  left: 140px;
+  z-index: -1;
+}
+
+.separator {
+  width: 60px;
+}
