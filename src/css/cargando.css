@@ -1,37 +1,113 @@
 #loader {
     position: absolute;
-    left: 50%;
-    top: 50%;
+    left: 52%;
+    top: 55%;
     z-index: 1;
     width: 150px;
     height: 150px;
     margin: -75px 0 0 -75px;
-    border: 16px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 16px solid #3498db;
     width: 120px;
     height: 120px;
-    -webkit-animation: spin 4s linear infinite;
-    animation: spin 2s linear infinite;
   }
 
   #loader .txt {
-    font-size: 50px;
+    font-size: 90px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bolder;
     position: relative;
-    top: -150px;
-    left: -30px;
+    top: -320px;
+    left: -80px;
+  }
+
+  #loader .load {
+    border: 20px solid black;
+    width: 80px;
+    height: 80px;
+    z-index: 3;
+    position: relative;
+    -webkit-animation: 2s infinite ease-in-out load;
+    animation: 2s infinite ease-in-out load;
   }
   
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
+  @-webkit-keyframes load {
+    0% { 
+      width: 80px;
+      height: 80px;
+      transform: rotate(0deg); 
+      top: 50px;
+      left: -40px;
+      border-radius: 0px;
+    }
+    25% {
+      width: 65px;
+      height: 65px;
+      top: 50px;
+      left: 40px;
+      border-radius: 10px;
+    }
+    50% {
+      width: 80px;
+      height: 80px;
+      top: 100px;
+      left: 40px;
+      border-radius: 0px;
+    }
+    75% {
+      width: 65px;
+      height: 65px;
+      top: 100px;
+      left: -40px;
+      border-radius: 10px;
+    }
+    100% { 
+      width: 80px;
+      height: 80px;
+      transform: rotate(360deg); 
+      top: 50px;
+      left: -40px;
+      border-radius: 0px;
+    }
   }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+
+  @keyframes load {
+    0% { 
+      width: 80px;
+      height: 80px;
+      transform: rotate(0deg); 
+      top: 50px;
+      left: -40px;
+      border-radius: 0px;
+    }
+    25% {
+      width: 65px;
+      height: 65px;
+      top: 50px;
+      left: 40px;
+      border-radius: 10px;
+    }
+    50% {
+      width: 80px;
+      height: 80px;
+      top: 100px;
+      left: 40px;
+      border-radius: 0px;
+    }
+    75% {
+      width: 65px;
+      height: 65px;
+      top: 100px;
+      left: -40px;
+      border-radius: 10px;
+    }
+    100% { 
+      width: 80px;
+      height: 80px;
+      transform: rotate(360deg); 
+      top: 50px;
+      left: -40px;
+      border-radius: 0px;
+    }
   }
 
   .animate-bottom {
