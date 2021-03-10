@@ -27,7 +27,7 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById(element).innerHTML = "CANCELLED <3";
+    document.getElementById(element).innerHTML = "Cancelado <3";
   }
 }, 1000);
 }
